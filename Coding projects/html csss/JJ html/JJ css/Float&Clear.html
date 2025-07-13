@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px solid rgb(54, 19, 54);
+            width: 900px;
+            padding: 10px;
+            margin: 50px auto;
+            background-color: rgb(190, 116, 116);
+            /* Margin auto set karne se left and right se content equally center me space ho jata hai and y-axis me aap jo margin dena chahe manually pixel me de skate hai */
+        }
+
+        .item{
+            border: 3px solid rgb(168, 16, 16);
+            margin: 13px 3px;
+            padding: 13px 3px;
+            background-color: rgb(197, 173, 173);
+        }
+
+        #Fruit{
+            float: left;
+            width: 48%;
+        }
+
+        #Computer{
+            float: right;
+            width: 48%;
+        }
+
+        #Stationary{
+            /* float: none; */
+            width: 100%;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">Float and Clear</h2>
+
+        <div id="Fruit" class="item">
+            <h3>Margin: auto</h3>
+            <p id="Fruitpara" class="para"><b style="font-size: large;">Margin: auto</b> set karne se left and right se content equally center me space ho jata hai and y-axis me aap jo margin dena chahe manually pixel me de skate hai.</p>
+        </div>
+
+            <div id="Computer" class="item">
+                <h3>float property</h3>
+                <p id="Computerpara" class="para">
+                    The float property is used for positioning and formatting content e.g. let an image float left to the text in a container.
+                    In its simplest use, the float property can be used to wrap text around images.
+                </p>
+            </div>
+
+                <div id="Stationary" class="item">
+                    <h3>clear property</h3>
+                    <p id="Stationarypara" class="para">When we use the float property, and we want the next element   
+                        below (not on right or left), we will have to use the clear property.
+                        The clear property specifies what should happen with the element that is next to a floating element.
+                        When clearing floats, you should match the clear to the float: If an element is floated to the left, then you should clear to the left. Your floated element will continue to float, but the cleared element will appear below it on the web page.
+                    </p>
+                </div>
+
+                <div id="Stationary" class="item">
+                    <h3>The clearfix Hack</h3>
+                    <p id="Stationarypara" class="para">If a floated element is taller than the containing element, it will "overflow" outside of its container. We can then add a clearfix hack to solve this problem:
+                    </p>
+                    <p>The <b>overflow: auto </b>clearfix works well as long as you are able to keep control of your margins and padding (else you might see scrollbars). The new, modern clearfix hack however, is safer to use, and the following code is used for most webpages:</p>
+                </div>
+    </div>
+
+    <hr>  <hr>    <hr>    <hr>
+    
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+    <style>
+    .div1 {
+      float: left;
+      padding: 10px;
+      border: 3px solid #73AD21;
+    }
+    
+    .div2 {
+      padding: 10px;
+      border: 3px solid red;
+    height: 30px;
+
+    }
+    
+    .div3 {
+      float: left;
+      padding: 10px;  
+      border: 3px solid #73AD21;
+    }
+    
+    .div4 {
+      padding: 10px;
+      border: 3px solid red;
+      clear: left;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <h2>Without clear</h2>
+    <div class="div1">div1</div>
+    <div class="div2">div2 - Notice that div2 is after div1 in the HTML code. However, since div1 floats to the left, the text in div2 flows around div1.</div>
+    <br><br>
+    
+    <h2>With clear</h2>
+    <div class="div3">div3</div>
+    <div class="div4">div4 - Here, clear: left; moves div4 down below the floating div3. The value "left" clears elements floated to the left. You can also clear "right" and "both".</div>
+    
+    </body>
+    </html>
+    
+    
+    

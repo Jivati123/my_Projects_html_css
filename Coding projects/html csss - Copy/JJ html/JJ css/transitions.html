@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Transitions</title>
+    <style>
+        div{
+            height: 100px;
+            width:150px;
+            background-color: aquamarine;
+            border: 2px, solid, black;
+            margin: 50px;
+            transition-property:all;
+            transition-duration: 2s;
+            transition-delay: 0.5s;
+            transition-timing-function: steps(5)
+        }
+
+        div:hover{
+            background-color: blue;
+            color: bisque;
+            font-size: 20px;
+             
+        }
+
+        div:active{
+            background-color: rgb(71, 9, 30);
+        }
+
+    </style>
+</head>
+<body>
+ 
+Transitions enable you to define the transition between two states of an element.<br>
+<b>transition-property:</b> property you want to transition (font-size, width etc.)<br>
+<b>transition-duration:</b> 2s/4ms..<br>
+<b>transition-timing-function:</b> ease-in / ease-out/linear/steps..<br>
+<b>transition-delay: </b> 2s/4ms...<br><br>
+
+
+<pre><h3>Transition Shorthand</h3>
+property name | duration | timing-function | delay
+transition: font-size 2s ease-in-out 0.2s;
+</pre>
+    <div>Jivati Jamariya</div>
+</body>
+</html>

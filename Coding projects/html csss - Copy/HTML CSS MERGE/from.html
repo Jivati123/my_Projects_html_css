@@ -1,0 +1,88 @@
+FORM.html
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Form</title>
+<style>
+    /* Basic styling for form layout */
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+    .form-group input[type="text"],
+    .form-group input[type="email"],
+    .form-group textarea {
+        width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    .form-group .split-input {
+        display: flex;
+    }
+    .form-group .split-input .input-half {
+        width: 48%;
+        margin-right: 4%;
+    }
+    .form-group .split-input .input-half:last-child {
+        margin-right: 0;
+    }
+    .form-group textarea {
+        height: 150px;
+        resize: vertical;
+    }
+    .form-group button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+    .form-group button:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<h2>Contact Us</h2>
+
+<form action="/submit-your-form-handler" method="post">
+    <div class="form-group">
+
+        <div class="split-input">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" class="input-half" required>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" class="input-half" required>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+    </div>
+    <div class="form-group">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+</body>
+</html>

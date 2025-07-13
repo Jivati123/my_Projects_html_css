@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="shortcut icon" type="x-icon" href="habuild.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        body{
+            background-color: rgb(238, 235, 235);
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .form{
+            /* padding: 15px 30px 30px 15px; */
+            background-color: white;
+            border: none;
+            height: 550px ;
+            width: 430px ; 
+            margin-left: 500px;
+            /* padding-left: 30px; */
+            border-radius: 20px;
+            padding: auto;
+            margin-top: 40px;
+                }
+
+        .form-content{
+            text-align: left;
+            margin-left: 70px;
+            border: none;
+            /* margin-top: 40px; */
+        }
+
+        input{
+            border: none;
+            text-align: left;
+            line-height: 8px;
+            border-radius: 8px;
+            background-color: rgb(241, 240, 241);
+            /* margin-top: 5px; */
+            width: 270px ;
+            padding: 8px;
+        }
+
+        button{
+            border-radius: 15px;
+            line-height: 30px;
+            color: white;
+            width: 290px;
+            border: none;
+            margin-top: 5px;
+        }
+
+        a{
+            text-decoration: none;
+            color: rgba(49, 158, 113, 0.973);       
+        }
+
+        h1{
+            padding-top: 20px;
+            /* padding-bottom: 20px; */
+
+        }
+
+        .sign{
+            background-color: rgba(49, 158, 113, 0.973);
+            margin-top: 10px;
+            /* color: white;
+            width: 260px ; */
+
+        }
+
+        .google{
+            background-color: black;
+            /* color: white;
+            width: 260px ; */
+        }
+
+        p{
+            text-align: center;
+            margin: 20px;
+            /* width: 210px ;
+            align-items: center; */
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="form">
+        <div class="registration">
+        <h1>Create an Account</h1>
+
+            <div class="form-content">
+
+                <label name="Full Name">Name:<br>
+                    <input type="text" placeholder="Enter Your Name">
+                </label><br><br>
+    
+                <label name="Email">Email:<br>
+                    <input type="email" placeholder="Enter Your Email">
+               </label><br><br>
+               
+               
+               <lable name="Password">Password:<br>
+                <input type="password" placeholder="Enter your password" id="password" />
+
+            </lable><br><br>
+    
+                <label name="Phone Number">Phone Number:<br>
+                    <input type="Text" placeholder="Enter your Phone number">
+                </label><br><br>
+            </div>
+    
+        <div>
+            <button class="sign">Sign Up</button>
+
+            <p>OR</p>
+
+            <button class="google">Sign Up with Google</button>
+        </div>
+        <div>
+            <p>Already have an Account? <a href="#">Login</a></p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

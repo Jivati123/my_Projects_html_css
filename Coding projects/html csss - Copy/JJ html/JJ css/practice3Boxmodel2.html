@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model 2</title>
+    <style>
+
+        div{
+            height: 100px;
+            width: 100px;
+            padding: 25px;
+            margin: 25px;
+            color: blanchedalmond;
+             /* display: inline; */
+            display: inline-block; 
+
+    /* inline set karne par other properties elemnt par apply nh kar skate jaise height width but agar inline-block use kare to same line me elements ayege uske sath hi other properties bhi apply kar skate hai */
+        }
+
+#four{
+    display: none; 
+    /* Display none krne se element document se hat jata hai */
+}
+
+#two{
+   background-color: rgba(0, 0, 255, 0.5);
+}
+    </style>
+
+</head>
+<body>
+    <h1>Box Model properties</h1>
+     <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur, enim commodi nostrum eligendi esse nam cumque, incidunt quasi modi, fuga quibusdam sed pariatur! Aut praesentium et iste ipsam sed?</P>
+     <button style="align-self: center;">click me</button><br><br><br>
+
+     <div id="one" style="background-color:red">DIV1</div>
+     <div id="two">DIV2</div>
+     <div id="three" style="background-color:green">DIV3</div>
+
+
+     <div id="four" style="background-color:green; visibility: none;">DIV3</div>
+
+
+
+</body>
+</html>

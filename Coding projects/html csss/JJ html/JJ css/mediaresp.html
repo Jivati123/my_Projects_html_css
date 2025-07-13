@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+        height: 100px;
+        width:100px;
+        background-color: pink;
+        }
+
+        @media (max-width:300px) {
+            div{
+                background-color: green;
+            }
+        }
+
+        @media(min-width:400px) and (max-width:600px){
+            div{
+                background-color: red;
+            }
+        }
+
+
+        @media(min-width:300px) and (max-width:400px){
+            div{
+                background-color: pink;
+            }
+        }
+
+        @media (min-width:600px) {
+            div{
+                background-color: blue;
+            }
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1>practice set 7</h1>
+    <pre style="font-size: 10px;">
+            Add a media query to implement the following:
+        Q1 the color of a div changes to green for viewport width less than 300px
+        Q2 the color of a div changes to pink for width between 300px & 400px
+        Q3 the color of a div changes to red for width between 400px & 600px
+        Q4 the color of a div changes to blue for width above 600px</pre>
+    <div></div>
+    <pre>The @media rule, introduced in CSS2, made it possible to define different style rules for different media types.
+
+        Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+        
+        Media queries can be used to check many things, such as:
+        
+        width and height of the viewport
+        orientation of the viewport (landscape or portrait)
+        resolution
+        Using media queries are a popular technique for delivering a tailored style sheet to desktops, laptops, tablets, and mobile phones (such as iPhone and Android phones).</pre>
+ 
+        <hr>
+        Media Queries Help create a responsive website
+     
+</body>
+</html>

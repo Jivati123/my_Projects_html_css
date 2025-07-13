@@ -1,0 +1,236 @@
+*{
+margin: 0px;
+padding: 0px;
+/* background-color: rgb(6, 56, 71); */
+color: white;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    background-color: rgb(6, 56, 71);
+    /* height: 100px; */
+    /* padding-top: 10px; */
+}
+
+#vijay{
+    color: rgb(235, 219, 189); 
+    font-size: 70px;
+    padding-bottom: 100px;
+
+}
+
+.logo{
+    color: rgb(235, 219, 189); 
+    font-size: 50px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+    margin: 40px;
+}
+
+.navigation{
+    text-align:justify;
+    margin-left: 17% ;
+
+}
+   
+.navigation a{
+    display: inline-flex;
+    color: white;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    padding-top: 100px;
+}
+
+
+.navigation a:hover{
+    color: red;
+}
+
+
+/**section**/
+
+.home{
+    /* margin: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 500px; */
+    background-color: rgb(232, 247, 244);
+
+    background-image: url('vijay1.jpeg');
+    background-repeat: no-repeat;
+    background-size: 40% 70%;
+    /* background-size: cover; */
+    background-position: right;
+    /* background-color: rgb(6, 56, 71); */
+    /* padding: 10px;
+    margin: 30px;
+    */
+}
+
+.home-content{
+    /* width: 700px; */
+    /* margin-bottom: 20px; */
+    /* height: 100vh; */
+    margin-bottom: 50px;
+    padding: 10px;
+    margin-top: 90px; 
+    font-weight: 700;
+
+}
+
+.home-content h1{
+    margin-left: 20px;
+    color: rgb(10, 35, 83);
+    font-size: 60px;
+    /* font-weight: 700; */
+    /* margin-left: 40px;
+    margin-top: 90px; */
+}
+
+.home-content h4{
+    font-size: 50px;
+    /* font-weight: 700; */
+    color: rgb(72, 204, 204);
+    margin-left: 40px;
+}
+
+.home-content p{
+    font-size: 20px; 
+    margin: 40px;
+    width: 45%;
+}
+
+.home-content .btn-box{
+    margin-top: 60px;
+    margin-left: 10%;
+}
+
+.home-content .btn-box a { 
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    font-size: 19px;
+    text-decoration: none;
+    background: transparent;
+    border: 2px solid  #00abf0;
+    border-radius: 8px;
+    color: black;
+}
+
+.home-content .btn-box a:hover{
+    background-color: rgb(6, 56, 71);
+     color: red;
+    transform: rotate(360deg);
+
+}
+
+
+.social-med{
+    position: absolute;
+    left: 1200px;
+    top: 50px;
+    width: 290px;
+    color: #081b29;
+
+}
+
+.social-med a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid  #081b29;
+    border-radius: 50%;
+    font-size: 20px;
+    text-decoration: none;
+    color: #081b29;
+    background-color: rgb(6, 56, 71);
+    /* background-color: rgb(48, 48, 94); */
+    /* margin-top: 15px; */
+    padding: 2px;
+}
+
+.social-med a:hover{
+    background-color: red;
+}
+
+
+/**footer**/
+.group{
+    /* height: 600px; */
+    background-color: rgb(6, 56, 71);
+    color: aliceblue;
+    /* padding: 40px; */
+    padding: 100px;
+    font-size: 40px;
+}
+
+.form-group{
+    /* text-align: center; */
+    font-size: 30px;
+    background-color: rgb(6, 56, 71);
+    padding-top: 40px;
+    color: black;
+}
+
+.form-group h3, p{
+    font-size:40px;
+    font-weight:bold ;
+    color: black;
+}
+
+.form-group .split-group{
+    font-size: 20px;
+    /* display: inline-flex; */
+    margin: 20px;
+    /* background-color: beige; */
+    color: black;
+
+
+
+}
+
+.form-group input{
+    margin: 20px;
+    font-weight:bold ;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+.form-group label{
+    font-weight:bold ;
+    font-size: 20px;
+    color: rgb(238, 227, 227);
+    margin-top: 10px;
+
+}
+
+.form-group textarea{
+    /* background-color: beige; */
+    color: black;
+    border-radius: 20px;
+
+}
+
+
+.form-group button{
+    padding: 15px;
+    font-weight:bold ;
+    font-size: 20px;
+    /* background-color: beige; */
+    color: black;
+     margin-left: 25%;
+     margin-top: 30px;
+     border-radius: 20px;
+}
+

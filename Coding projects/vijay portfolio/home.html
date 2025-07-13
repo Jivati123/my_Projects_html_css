@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+
+    <style>
+
+        body{
+            height: 100vh;
+            width: 100%;
+            /* background-color: rgb(26, 26, 58); */
+            background-image: url('logouse.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding-bottom: 50px;
+        }
+
+       
+        .heading{
+            position: relative;
+            color: blanchedalmond;
+            text-align: center;
+            font-size: 30px;
+            padding-bottom: 90px;
+            animation-duration: 4s;
+            animation-name: slidein, font;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+        }
+
+
+        @keyframes slidein{
+            from{color: rgb(230, 197, 220);}
+           to{ color:rgb(107, 106, 150)}
+        }
+      
+        @keyframes font{
+           from{font-size: 20px;}
+           to{ font-size: 30px;}
+        }
+
+         .navigation{
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .navigation a{
+            position:static;
+            display: inline-block;
+            color: white;
+            padding: 20px 20px;
+            text-decoration: none;
+            font-size: 20px;
+            text-decoration: none;  
+        }
+
+        .navigation a:hover{
+         color: red;
+        }
+
+
+    </style>
+
+</head>
+<body>
+
+    <!-- <h2 class="logo"><span id="vijay">V</span>ijay.</h2> -->
+    <nav class="navigation">
+        <a href="home.html" target="_main">Home </a>
+        <a href="#" >Work</a>
+        <a href="about.html" target="_main">About</a>
+        <a href="#" target="_main">Resume</a>
+    </nav>
+    
+    
+    <div class="heading" id="head-vijay">
+        <h1>Vijay Jamariya</h1>
+    </div>
+
+
+    <div>
+        Reach me at: 
+        © 2024- Ramya Anand
+    </div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+#navbar{
+    background-color: black;
+    height: 60px;
+    padding-top: 10px;
+
+}
+
+a{
+    color: blanchedalmond;
+    border-radius: 60px;
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+button{
+    background-color: #f08804;
+}
+
+#logo{
+    color: #f08804;
+    font-size: 25px;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    
+    <style>
+        .navbar{
+            background-color: cadetblue;
+            display: flex;
+            justify-content: space-evenly;
+            height: 30px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        li{
+            list-style-type: none;
+            /* display: flex; */
+            background-color: rgb(3, 48, 49);  
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #outer{
+            background-color: burlywood;
+            height: 300px;
+            width: 300px;
+            /* display: flex;*/
+            /*justify-content: center; */
+            /* align-items: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #inner{
+            background-color: rgb(99, 61, 11) ;
+            height: 100px;
+            width:100px;
+            color: antiquewhite;
+            /* display: flex;
+            justify-content: center;
+            align-items: center; */
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="navbar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact me</a></li>
+            <li><a href="#">know more at:</a></li>
+    </div><br><br>
+
+    <div id="outer">
+        <div id="inner">Jivati</div>
+    </div>
+</body>
+</html>

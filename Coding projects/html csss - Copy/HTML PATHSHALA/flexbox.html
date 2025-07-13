@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body{
+            padding: 24px;
+        }
+
+        .parent{
+            /* height: 200px; */
+            width: 600px;
+            border: 2px solid black;
+            display: flex;
+            gap: 24px;
+            padding: 24px;
+            margin: 24px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+        }
+
+        .child{
+            height: 100px;
+            width: 100px;
+            color: rgb(165, 165, 192);
+            border: 3px solid rgb(245, 134, 134);
+        }
+
+        /* .p1{
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .p2{
+            height: 300px;
+            width: 700px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .p3{
+            justify-content: space-around;
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox properties</h1>
+
+    <pre> 
+        Flexbox is short for the Flexible Box Layout module.
+        Flexbox is a layout method for arranging items in rows or columns.
+        Flexbox makes it easier to design a flexible responsive layout structure, without using float or positioning.
+    </pre>
+
+    <h3>The CSS properties we use for the flex container are: </h3>
+
+        <li>flex-direction - The flex-direction property specifies the display-direction of flex items in the flex container.        </li>
+        <li>flex-wrap</li>
+        <li> flex-flow</li>
+        <li> justify-content</li>
+        <li>align-items</li>
+        <li> align-content</li>
+  
+
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+
+  <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+    </div>
+    
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+    
+    <div class="parent">
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+        <div class="child"></div>
+
+    </div>
+
+</body>
+</html>

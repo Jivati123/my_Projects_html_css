@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+    <style>
+        h1{
+    background-color: blanchedalmond;
+    height: 50px;
+    width: 400px;
+
+    border-style: double;
+    border-color: rgb(54, 10, 10);
+    border-width: 2px;
+
+   text-align: center; 
+     /* sirf box ke center me content aayega not screen*/
+} 
+
+p{
+    background-color: blanchedalmond;
+    height: 60px;
+    border-style: dashed;
+    border-color: brown;
+    border-width: 1px;
+}
+
+div{
+    /* height: 100px;
+    width: 100px; */
+    padding: 25px;
+    margin: 25px;
+   
+}
+
+#one{
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(35, 35, 73);  
+
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+
+    margin-top: 25px;
+    margin-bottom: 60px ;
+
+}
+
+#two{
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(35, 35, 73);  
+    border-radius: 20px;
+    padding-top: 50px;
+
+    margin-bottom: 40px ;
+    margin-left: 100px;
+
+
+}
+
+#three{
+    background-color: cadetblue;
+    height: 100px;
+    width: 100px;
+    border-style: solid;
+    border-color: rgb(35, 35, 73); 
+    border-radius: 50%;
+    padding: 1px 3px 5px 7px;
+
+    /* margin-left: 150px;
+    margin-bottom: 50px ; */
+
+    margin:10px 100px 50px 150px;
+}
+
+#four{
+    height: 100px;
+    width:100px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+
+#box3, #box2, #box1{
+    display: inline;
+   }
+
+
+#BOX2{
+    display: NONE;
+}
+/* last box model */
+
+     .container{
+        background-color: rgb(224, 230, 235);
+        border: 2px solid rgb(35, 35, 73);
+        padding: 40px 19px;
+        margin: 10px 19px;
+        border-radius: 23px;
+        height: 100px;
+        width: 500px;
+     } 
+
+     
+    
+
+    </style>
+</head>
+<body>
+    <h1>Box Model properties</h1>
+     <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias consequuntur, enim commodi nostrum eligendi esse nam cumque, incidunt quasi modi, fuga quibusdam sed pariatur! Aut praesentium et iste ipsam sed?</P>
+     <button>click me</button><br><br>
+
+     <div id="one">DIV1</div><br>
+     <div id="two">DIV2</div><br>
+     <div id="three">DIV3</div><br>
+
+     <p>Q1: Create a div with height & width of 100px.Set its background color to green & the border radius to 50%.</p>
+     <div id="four">DIV4</div>
+     
+     <hr><br><br><br>
+
+     <div id="box1" style="background-color:red">DIV1</div>
+     <div id="box2" style="background-color:blue">DIV2</div>
+     <div id="box3" style="background-color:green">DIV3</div>
+
+     <hr><br><br><br>
+
+     <div id="box4" style="background-color:red">DIV1</div>
+     <div id="box5" style="background-color:blue">DIV2</div>
+     <div id="box6" style="background-color:green">DIV3</div>
+
+    
+     <hr><br><br><br>
+
+
+     <div class="container">
+        <span id="fisrt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere saepe totam ea commodi quas expedita ab, fugit sapiente necessitatibus iste consectetur eaque rerum? Voluptatem sint fugiat recusandae impedit ab?</span>
+     </div>
+
+     <div class="container">
+        <span id="Second">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere saepe totam ea commodi quas expedita ab, fugit sapiente necessitatibus iste consectetur eaque rerum? Voluptatem sint fugiat recusandae impedit ab?</span>
+     </div>
+
+
+     <div class="container">
+        <span id="Third">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere saepe totam ea commodi quas expedita ab, fugit sapiente necessitatibus iste consectetur eaque rerum? Voluptatem sint fugiat recusandae impedit ab?</span>
+     </div>
+
+
+</body>
+</html>

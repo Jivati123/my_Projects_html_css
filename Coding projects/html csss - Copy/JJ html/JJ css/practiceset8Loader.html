@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lOADER</title>
+    <style>
+        div{
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            border: 15px solid rgb(143, 212, 143);
+            border-top: 15px solid rgb(28, 68, 28);
+            /* animation-name: rotate;
+            animation-duration: 2s;
+            animation-timing-function: ease-in;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse; */
+
+            animation: rotate 1s ease-in-out 0s infinite reverse;
+
+        }
+
+        @keyframes rotate{
+            from{
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1> Practice Set 8</h1>
+<pre style="font-size: 20px;">
+    Qs: Create a simple loader using CSS
+    Step1: create a div with a circular shape & a thick border from one end (top/bottom/left/right)
+    Step2: To make it spin create an animation that transforms it from Odeg to 360deg
+    Step3: Add the animation property to the loader with infinite duration 
+</pre>
+    <div class="loader"></div>
+</body>
+</html>

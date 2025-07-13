@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <style>
+
+.navbar{
+    background-color: black;
+    padding: 25px;
+    border-radius: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a{
+    /* margin-right: 190px; */
+    color: aliceblue;
+    text-decoration: none;
+
+  }
+
+#searchbar{
+        margin-left: 390px;
+} 
+
+#logo{
+    font-size: 25px;
+    color: orangered;
+}
+
+button{
+    background-color:orangered ;
+    
+}
+
+.contextbox{
+    height: 100px;
+    width:  100px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 50px;
+    padding: 30px;
+
+} 
+
+#content{
+    height: 500px;
+    text-align: center;
+}
+
+footer{
+
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    text-align: center;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a id="logo" href="#">Amazon.in</a>
+            <a href="#">Account</a>
+            <a href="#">My cart</a>
+            <a href="#">Contact us</a>
+            <input name="search" id="searchbar" placeholder="search Amazon.in">
+            <button>Search</button>
+        </div>
+    </header>
+    <main>
+        <div id="content">
+          <div class="contextbox" style="background-color: rgba(255, 0, 0, 0.5);">Box1</div>
+          <div class="contextbox" style="background-color: rgba(0, 255, 0, 0.5);">Box2</div>
+          <div class="contextbox" style="background-color: rgba(0, 0, 255, 0.5);">Box3</div>
+        </div>
+
+    </main><br>
+
+<footer>Made with &hearts; by Jivati<br>
+    &copy;1996-2024, Amazon.com, Inc. or its affiliates
+</footer>
+</body>
+</html>

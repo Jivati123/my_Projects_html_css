@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox in depth</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 24px;
+        }
+
+        .parent{
+            outline: 2px solid red;
+            padding: 24px;
+        }
+
+        .flex-parent{
+            display: flex;
+        }
+
+        .parent0{
+            justify-content: space-evenly;  
+        }
+        .parent0 .flex-item{
+            outline: 2px solid #008000;
+            padding: 24px;
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 3 ;
+        }
+        
+        .parent1 .flex-item{
+            outline: 2px solid green;
+            padding: 24px;
+            flex-basis: 200px;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+    </style> 
+</head>
+<body>
+    <h2>Flexbox in Depth</h2>
+    <div class="parent parent0 flex-parent">
+        <div class="flex-item">lorem</div>
+        <div class="flex-item">Lorem, ipsum dolor.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quo.</div>
+    </div>
+
+    <div class="parent parent1 flex-parent">
+        <div class="flex-item">lorem</div>
+        <div class="flex-item">Lorem, ipsum dolor.</div>
+        <div class="flex-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, quo.</div>
+    </div>
+</body>
+</html>

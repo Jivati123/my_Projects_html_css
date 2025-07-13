@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+
+       div{
+            background-color: darkseagreen;
+            color: beige;
+            height: 200px;
+            width: 200px;
+            border: 2px, solid, black;
+            border-radius: 50%;
+            position: relative;
+            left: 10px;
+            text-align:center;
+            animation-name: bgcolor, myName, position;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-delay: 6s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+            /* animation: myName 2s ease-in 1s infinite alternate  */
+
+        }
+
+        @keyframes bgcolor{
+            from{ background-color: darkseagreen;}
+            to{ background-color: brown;}
+        }
+
+        @keyframes myName{
+              0% {font-size: 20px; }
+              50% { font-size: 30px; }
+              1000% { font-size: 40px; }
+
+          }
+
+        @keyframes position{
+            from{ left: 0px;}
+            to{ left: 100%;}
+        }  
+    
+    </style>
+        
+</head>
+<body>
+    <h1>Animation</h1>
+     <pre>
+        To animate CSS elements
+
+
+        @keyframes bgcolor{
+            from{ background-color: brown;}
+            to{ background-color:darkseagreen;}
+        }
+
+        @keyframes myName{
+            from {font-size: 20px; }
+            to { font-size: 40px; }
+        }
+
+
+        <div>Jivati 
+Jamariya</div>
+
+     <h1>Animation Properties</h1>
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction: normal, reverse, alternate, alternate-reverse
+
+
+<h2>% in Animation</h2>
+@keyframe myName {
+0% {font-size: 20px;}
+50% {font-size: 30px; }
+100% {font-size: 40px;}
+}
+
+
+<H1>ANIMATION SHORTHAND</H1>
+animation: myName 2s ease-in 1s infinite alternate 
+     </pre>
+
+</body>
+</html>
